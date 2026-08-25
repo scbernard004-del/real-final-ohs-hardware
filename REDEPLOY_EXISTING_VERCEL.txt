@@ -1,0 +1,22 @@
+OHGS WEBSITE — UPDATE AN EXISTING GITHUB AND VERCEL PROJECT
+
+1. Extract OHGS_GITHUB_UPLOAD_READY.zip.
+2. Open the GitHub repository connected to Vercel and select the production branch, normally main.
+3. Choose Add file > Upload files.
+4. Upload in two batches because GitHub accepts up to 100 files per browser upload:
+   - Batch 1: all root files plus the api folder.
+   - Batch 2: the complete media folder.
+5. Commit both batches. Do not upload the ZIP itself or a real SMTP password.
+6. Vercel should start a deployment automatically. In Settings > Git, confirm the repository and Production Branch are correct.
+7. In Settings > Build and Deployment, use:
+   Framework Preset: Other
+   Root Directory: ./
+   Build Command: npm run build
+   Output Directory: dist
+8. If an automatic deployment does not start, open Deployments, select the latest production deployment and choose Redeploy.
+9. Turn off Use existing Build Cache when redeploying this update.
+10. Open /version-check.txt on the live domain and confirm v28-mobile-theme-logo-fix.
+11. On the Home page, change the language to Kiswahili. Page content and the browser-tab title must change. Home must contain six videos and Gallery must contain nine.
+12. On a phone, test both light and dark mode. The logo, menu lines, headings, paragraphs and buttons must remain clear. The sun switches to light; the moon switches to dark.
+
+The existing custom domain and environment variables remain attached when you update the same Vercel project.

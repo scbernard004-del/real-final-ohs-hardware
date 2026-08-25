@@ -1,0 +1,2 @@
+OHGS RELEASE v28-mobile-theme-logo-fix — mobile logo and menu contrast improved; light/dark switching synchronized before first paint; all 23 responsive pages, English/Kiswahili titles, Home six videos and Gallery nine retained.
+2026-08-23
